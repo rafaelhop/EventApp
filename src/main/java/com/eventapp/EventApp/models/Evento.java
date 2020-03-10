@@ -28,7 +28,7 @@ public class Evento implements Serializable{
 	//@NotEmpty
 	private String data;
 
-	@NotEmpty
+//	@NotEmpty
 	private String horario;
 	
 	//@OneToMany
