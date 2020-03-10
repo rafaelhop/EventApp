@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>EventApp</title>
 </head>
 <body>
-    <h3>Olá mundo com spring boot =D</h3>
+    <h1>Lista de eventos</h1>
+    <h3><a href="/cadastrarEventos">Cadastrar evento</a></h3>
+    <div th:each= "evento : ${eventos}">
+        <div class="row">
+            <p><span th:text="${evento.nome}"></span></p>
+            <p><span th:text="${evento.local}"></span></p>
+            <p><span th:text="${evento.data}"></span></p>
+            <p><span th:text="${evento.horario}"></span></p>
+        </div>
+
+    </div>
 </body>
 </html>
