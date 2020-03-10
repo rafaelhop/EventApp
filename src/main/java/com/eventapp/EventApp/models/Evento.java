@@ -7,8 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import org.hibernate.validator.constraints.NotEmpty;
-
 
 @Entity
 public class Evento implements Serializable{
