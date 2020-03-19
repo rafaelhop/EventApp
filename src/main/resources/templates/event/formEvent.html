@@ -5,18 +5,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EventApp</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
 </head>
 
 <body>
     <h1>Cadastro de eventos</h1>
-    <form method="POST">
+    <form method="POST" class="container">
+        <h3><a href="/eventos" class="waves-effect waves-light btn"><i class="material-icons left">list</i>Listar eventos</a></h3>
         Nome: <input type="text" value="" name="nome" />
-        Local: <input type="text" value="" name="local" />
-        Data: <input type="date" value="" name="data" />
-        Horário: <input type="text" value="" name="horario" />
-
-        <button type="submit">Salvar</button>
+        <div class="row">
+            <div class="input-field col s6">
+                Local: <input type="text" value="" name="local" />
+            </div>
+            <div class="input-field col s3">
+                Data: <input type="date" value="" name="data" />
+            </div>
+            <div class="input-field col s3">
+                Horário: <input type="text" value="" name="horario" />
+            </div>
+        </div>
+        <button type="submit" class="waves-effect waves-light btn"><i
+                class="material-icons left">save</i>Salvar</button>
     </form>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 
 </html>
