@@ -45,7 +45,6 @@ public class EventController {
 		Evento evento = eventRepository.findByCodigo(codigo);
 		view.addObject("evento", evento);
 		return view;
-
 	}
 	
 	@RequestMapping(value ="view/{codigo}", method = RequestMethod.POST)
@@ -54,8 +53,6 @@ public class EventController {
 		convidado.setEvento(evento);
 		convidadoRepository.save(convidado);
 		return "redirect:/view/{codigo}";
-		
-		
 	}
 
 }
