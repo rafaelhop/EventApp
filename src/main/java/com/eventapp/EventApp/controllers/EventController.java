@@ -70,5 +70,4 @@ public class EventController {
 		attributes.addFlashAttribute("mensagem", "Convidado adicionado com sucesso!");
 		return "redirect:/view/{codigo}";
 	}
-
 }
