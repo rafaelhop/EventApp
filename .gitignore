@@ -1,20 +1,20 @@
 
-src/main/java/snippet/Snippet.java
 
-target/classes/snippet/Snippet.class
 
-target/classes/com/eventapp/EventApp/models/Evento.class
 
-*.class
 
-*.properties
 
-target/classes/META-INF/maven/com.eventapp/EventApp/pom.xml
 
-target/classes/static/materialize/css/materialize.css
 
-*.css
 
-target/classes/templates/event/formEvent.html
+
+
+
+
+
+
+
+
+
 
 target/
