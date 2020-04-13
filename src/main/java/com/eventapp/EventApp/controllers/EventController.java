@@ -70,4 +70,20 @@ public class EventController {
 		attributes.addFlashAttribute("mensagem", "Convidado adicionado com sucesso!");
 		return "redirect:/view/{codigo}";
 	}
+	
+	@RequestMapping("deleteEvento")
+	public String deleteEvento(Long codigo) {
+		Evento evento = eventRepository.findByCodigo(codigo);
+		eventRepository.delete(evento);
+		return "redirect:/eventos";
+	}
+	
+	@RequestMapping("deleteConvidado")
+	public String deleteConvidado(String rg) {
+		Convidado convidado = convidadoRepository.findByRg(rg);
+		convidadoRepository.delete(convidado);
+		Evento evento = convidado.getEvento();
+		String codigo = String.valueOf(evento.getCodigo());
+		return "redirect:/"+codigo;
+	}
 }
