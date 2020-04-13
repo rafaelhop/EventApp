@@ -84,6 +84,6 @@ public class EventController {
 		convidadoRepository.delete(convidado);
 		Evento evento = convidado.getEvento();
 		String codigo = String.valueOf(evento.getCodigo());
-		return "redirect:/"+codigo;
+		return "redirect:/view/"+codigo;
 	}
 }
